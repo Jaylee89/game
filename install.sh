@@ -10,6 +10,7 @@ rm -rf venv
 python3 -m venv venv
 
 venv/bin/python3 venv/bin/pip3 install -r requirements.txt --index-url=https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+venv/bin/python3 -m pip install --upgrade pip
 
 rm -f start
 ln -s start.sh start
